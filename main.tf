@@ -48,7 +48,7 @@ resource "time_sleep" "wait_for_workspace" {
 
 resource "databricks_cluster" "db_cluster" {
   cluster_name            = "my-databricks-cluster"
-  spark_version           = "12.2.x-scala2.12"
+  spark_version           = "13.3.x-scala2.12"
   node_type_id            = "Standard_DS3_v2"
   autotermination_minutes = 10
   autoscale {
