@@ -65,3 +65,7 @@ output "databricks_host" {
 output "databricks_azurerm_databricks_workspace_id" {
   value = azurerm_databricks_workspace.db_workspace.id
 }
+
+output "databricks_cluster_id" {
+  value = databricks_cluster.db_cluster.id
+}
