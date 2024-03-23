@@ -57,3 +57,11 @@ resource "databricks_cluster" "db_cluster" {
   }
   provider = databricks.azure
 }
+
+output "databricks_host" {
+  value = azurerm_databricks_workspace.db_workspace.workspace_url
+}
+
+output "databricks_azurerm_databricks_workspace_id" {
+  value = azurerm_databricks_workspace.db_workspace.id
+}

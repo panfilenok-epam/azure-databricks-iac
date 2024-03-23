@@ -38,3 +38,6 @@ jobs:
 
       - name: Terraform Apply
         run: terraform apply -auto-approve "tfplan"
+      
+      - name: Terraform Output
+        run: terraform output
